@@ -169,6 +169,7 @@
     border-style: solid;
     border-color: #E7E9FC;
     transition: box-shadow var(--transition);
+    cursor: pointer;
 }
 
 .row li:hover,
@@ -515,6 +516,9 @@ h3 {
     transition: fill var(--transition);
 }
 
+.form-group:focus-within{
+    color:var(--service-color);
+}
 .form-group svg:hover,
 .form-group svg:focus{
   fill: var(--service-color);
@@ -544,14 +548,12 @@ h3 {
     height: 56px;
     margin: 24px 96px;
     font-weight: 500;
-}
-
-.form-button:hover,
-.form-button:focus{
     color: #ffffff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: rgba(77, 90, 229, 1);
+    background-color: rgba(77, 90, 229, 1);
+    cursor: pointer;
 }
+
 /* end modal */
 
 .hero-filters .filters button {
