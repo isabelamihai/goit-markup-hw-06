@@ -507,22 +507,21 @@ h3 {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: fill var(--transition), color var(--transition);
 }
 
 .form-group svg {
     position: absolute;
     width: 18px;
     height: 18px;
-    transition: fill var(--transition);
+    
 }
 
 .form-group:focus-within{
     color:var(--service-color);
+    fill: var(--service-color);
 }
-.form-group svg:hover,
-.form-group svg:focus{
-  fill: var(--service-color);
-}
+
 
 .form-comment textarea {
     resize:none;

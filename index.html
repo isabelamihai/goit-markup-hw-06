@@ -57,7 +57,7 @@
                             <use href="./images/icons.svg#icon-closeb"></use>
                         </svg>
                     </button>
-                    <form class="form-example" action-method="get" name="signup_form" autocomplete="on" novalidate>
+                    <form class="form-example" action-method="get" name="signup_form" autocomplete="on">
                         <p class="form-title">Leave your contacts and we will call you back</p>
                         <div class="inputs">
                         <div class="form-group">
@@ -65,11 +65,12 @@
                                 <span>Name</span>
                                 </label>
                                 <label>
-                                <svg>
+                                <i> <svg>
                                     <use href="./images/icons.svg#icon-person"></use>
-                                </svg>
+                                </svg></i>
                                 </label>
-                                <input type="text" name="name" id="name" required>
+                                <input type="text" name="name" id="name" required 
+                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
                         </div>
                         <div class="form-group">
                             <label>
@@ -80,7 +81,7 @@
                                     <use href="./images/icons.svg#icon-phone"></use>
                                 </svg>
                                 </label>
-                            <input type="tel" id="phone_number" required>
+                            <input type="tel" id="phone_number" required minlength="8">
                         </div>
                         <div class="form-group">
                             <label>
@@ -96,14 +97,14 @@
                         <div class="form-comment">
                             <label class="form-com">
                                 Comment
-                                <textarea name="comment" rows="10" placeholder="Text input"></textarea>
+                                <textarea name="comment" rows="10" placeholder="Text input" required></textarea>
                         </label>
                         </div>
                         </div>
                         <div class="form-checkbox">
                             <label class="form-check">
                                 <input type="checkbox" name="privacy-policy"
-                                    value="I accept the terms and conditions of the Privacy Policy" />
+                                    value="I accept the terms and conditions of the Privacy Policy" required />
                                 I accept the terms and conditions of the <a href="index.html">Privacy Policy</a>
                             </label>
                         </div>
