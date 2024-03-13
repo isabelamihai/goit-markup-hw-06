@@ -59,7 +59,7 @@
                     </button>
                     <form class="form-example" action-method="get" name="signup_form" autocomplete="on" novalidate>
                         <p class="form-title">Leave your contacts and we will call you back</p>
-                        <div class="group-all">
+                        <div class="inputs">
                         <div class="form-group">
                             <label>
                                 <span>Name</span>
@@ -69,7 +69,7 @@
                                     <use href="./images/icons.svg#icon-person"></use>
                                 </svg>
                                 </label>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required>
                         </div>
                         <div class="form-group">
                             <label>
@@ -80,7 +80,7 @@
                                     <use href="./images/icons.svg#icon-phone"></use>
                                 </svg>
                                 </label>
-                            <input type="tel" id="phone">
+                            <input type="tel" id="phone" required>
                         </div>
                         <div class="form-group">
                             <label>
@@ -91,7 +91,7 @@
                                     <use href="./images/icons.svg#icon-email"></use>
                                 </svg>
                                 </label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-comment">
                             <label class="form-com">
@@ -107,7 +107,8 @@
                                 I accept the terms and conditions of the <a href="index.html">Privacy Policy</a>
                             </label>
                         </div>
-                        <button type="submit">Send</button>
+                        <label class="formb">
+                        <button class="form-button" type="submit">Send</button></label>
                     </form>
                 </div>
             </div>

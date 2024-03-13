@@ -537,7 +537,20 @@ h3 {
     width: 360px;
     height:16px;
     font-size: 12px;
-    text-align:start;
+}
+
+.form-button{
+    width: 169px;
+    height: 56px;
+    margin: 24px 96px;
+    font-weight: 500;
+}
+
+.form-button:hover,
+.form-button:focus{
+    color: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background-color: rgba(77, 90, 229, 1);
 }
 /* end modal */
 
