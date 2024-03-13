@@ -444,11 +444,11 @@ h3 {
     background-color:var(--color-hover);
 }
 
+/* modal */
 .is-hidden{
     visibility: hidden;
     transform: scale(1.1);
 }
-
 
 .modal {
     position:fixed;
@@ -498,6 +498,48 @@ h3 {
    background-color: var(--color-hover);
    fill: #ffffff;
 }
+
+.form-group {
+    width: 360px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.form-group svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transition: fill var(--transition);
+}
+
+.form-group svg:hover,
+.form-group svg:focus{
+  fill: var(--service-color);
+}
+
+.form-comment textarea {
+    resize:none;
+    width: 360px;
+    height: 138px;
+}
+.form-example .form-title{
+    font-weight: 500;
+    height: auto;
+    text-align: center;
+    width: 360px;
+    height: 24px;
+}
+
+.form-check{
+    width: 360px;
+    height:16px;
+    font-size: 12px;
+    text-align:start;
+}
+/* end modal */
 
 .hero-filters .filters button {
     background-color: var(--nav-buton-color);
