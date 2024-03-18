@@ -507,42 +507,102 @@ h3 {
     flex-direction: column;
     justify-content: center;
     position:relative;
-    transition: fill var(--transition), color var(--transition);
+    transition: fill var(--transition);
+    margin-bottom:0px;
+    margin-top:0px;
 }
 
-.form-group svg {
+.form-group input{
+    appearance: none;
+    outline: none;
+    background: transparent;
+    width: 360px;
+    height: 40px;
+    border: 1px solid;
+    border-color: rgba(46, 47, 66, 0.4);
+    border-radius:4px;
+    transition: border-color var(--transition);
+}
+
+.form-group input:focus-within {
+    border-color:var(--service-color);
+}
+.form-group .form-icon {
     position: absolute;
-    margin-right:2px;
     width: 18px;
     height: 18px;
-    
+    left:16px;
+    bottom:8px;
 }
 
-.form-group:focus-within{
-    color:var(--service-color);
+.form-group span {
+    color: #8E8F99;
+    font-size:12px;
+    transition:color var(--transition);
+}
+
+ .form-com {
+    color: #8E8F99;
+    font-size: 12px;
+}
+
+.text-comment::placeholder{
+    color: rgba(46, 47, 66, 0.4);
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 4%;
+}
+
+.form-group:focus-within {
     fill: var(--service-color);
 }
 
-
 .form-comment textarea {
+    outline: none;
+    background: transparent;
     resize:none;
     width: 360px;
     height: 138px;
+    border-width: 1px;
+    border-style:solid;
+    border-color:rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    transition: border-color var(--transition);
+}
+
+.form-comment:focus-within {
+    border-color:var(--service-color);
 }
 .form-example .form-title{
+    margin-top:0px;
     font-weight: 500;
-    height: auto;
     text-align: center;
     width: 360px;
     height: 24px;
 }
 
-.form-check{
-    width: 360px;
-    height:16px;
-    font-size: 12px;
+.form-check .check-icon{
+    width: 16px;
+    height: 16px;
+    fill:#ffffff;
+    border:1px solid rgba(46, 47, 66, 0.4);
+    border-radius:2px;
+    margin-top:8px;
 }
 
+.checkmark-icon{
+    width: 9.51px;
+    height: 6.99px;
+    color: var(--nav-buton-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+}
+.form-check .rules{
+    width: 338px;
+    height: 16px;
+    font-size: 12px;
+    margin: 0px 22px 0px 8px;
+}
 .form-button{
     width: 169px;
     height: 56px;
@@ -554,6 +614,52 @@ h3 {
     cursor: pointer;
 }
 
+.form-end{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding-top:16px;
+}
+
+.f-end span{
+    color: #ffffff;
+}
+
+.f-end{
+    margin-left:80px;
+}
+.form-end input{
+    width: 264px;
+    height: 40px;
+    background-color: var(--title-color);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.form-end button {
+    width: 165px;
+    height: 40px;
+    margin-left: 24px;
+    background-color: var(--service-color);
+    color:#ffffff;
+    border-radius:4px;
+    border: 1px solid var(--service-color);
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    transition: background-color var(--transition);
+}
+
+.form-end svg{
+    width: 24px;
+    height: 24px;
+    margin-left:16px;
+}
+
+.form-end button:hover,
+.form-end button:focus{
+    background-color:var(--footer-links-color);
+}
 /* end modal */
 
 .hero-filters .filters button {
