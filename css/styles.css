@@ -590,13 +590,6 @@ h3 {
     margin-top:8px;
 }
 
-.checkmark-icon{
-    width: 9.51px;
-    height: 6.99px;
-    color: var(--nav-buton-color);
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-}
 .form-check .rules{
     width: 338px;
     height: 16px;
