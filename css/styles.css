@@ -584,12 +584,15 @@ h3 {
 .form-check .check-icon{
     width: 16px;
     height: 16px;
-    fill:#ffffff;
-    border:1px solid rgba(46, 47, 66, 0.4);
-    border-radius:2px;
+    fill:var(--nav-buton-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
     margin-top:8px;
 }
 
+.form-checkbox svg:hover {
+    fill:var(--service-color);
+}
 .form-check .rules{
     width: 338px;
     height: 16px;
