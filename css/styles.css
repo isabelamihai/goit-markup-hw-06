@@ -534,11 +534,9 @@ h3 {
     left:16px;
     bottom:8px;
 }
-
 .form-group span {
     color: #8E8F99;
     font-size:12px;
-    transition:color var(--transition);
 }
 
  .form-com {
