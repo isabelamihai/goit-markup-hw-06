@@ -679,7 +679,13 @@ h3 {
     background-color:var(--footer-links-color);
 }
 
-
+.text-form-end::placeholder {
+    color:#ffffff;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 4%;
+    padding-left:16px;
+}
 .hero-filters .filters button {
     background-color: var(--nav-buton-color);
     color:var(--service-color);
