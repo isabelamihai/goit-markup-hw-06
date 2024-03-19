@@ -590,6 +590,14 @@ h3 {
     margin-top:8px;
 }
 
+.form-checkbox .form-check::before{
+    content: '\2713';
+    position: absolute;
+    padding-left:1px;
+    padding-top:3px;
+    visibility:hidden;
+}
+
 .form-checkbox svg:hover {
     fill:var(--service-color);
 }
@@ -599,10 +607,15 @@ h3 {
     font-size: 12px;
     margin: 0px 22px 0px 8px;
 }
+
+.form-check .rules a{
+    text-decoration:underline;
+    color:var(--service-color);
+}
 .form-button{
     width: 169px;
     height: 56px;
-    margin: 24px 96px;
+    margin: 24px 90px;
     font-weight: 500;
     color: #ffffff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
