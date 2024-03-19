@@ -522,6 +522,7 @@ h3 {
     border-color: rgba(46, 47, 66, 0.4);
     border-radius:4px;
     transition: border-color var(--transition);
+    padding-left:35px;
 }
 
 .form-group input:focus-within {
@@ -561,7 +562,7 @@ h3 {
     background: transparent;
     resize:none;
     width: 360px;
-    height: 120px;
+    height: 138px;
     border-width: 1px;
     border-style:solid;
     border-color:rgba(46, 47, 66, 0.4);
@@ -657,6 +658,7 @@ h3 {
 .form-end button:focus{
     background-color:var(--footer-links-color);
 }
+
 /* end modal */
 
 .hero-filters .filters button {
