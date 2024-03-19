@@ -554,7 +554,7 @@ h3 {
 }
 
 .form-group:focus-within {
-    fill: var(--service-color);
+    fill:var(--service-color);
 }
 
 .form-comment textarea {
@@ -598,9 +598,14 @@ h3 {
     visibility:hidden;
 }
 
+.form-checkbox:checked + .form-check::after{
+    visibility: visible;
+}
+
 .form-checkbox svg:hover {
     fill:var(--service-color);
 }
+
 .form-check .rules{
     width: 338px;
     height: 16px;
@@ -624,6 +629,8 @@ h3 {
 }
 .form-button:hover{
     background-color:var(--color-hover);
+
+ /* end modal */
 }
 .form-end{
     display: flex;
@@ -672,7 +679,6 @@ h3 {
     background-color:var(--footer-links-color);
 }
 
-/* end modal */
 
 .hero-filters .filters button {
     background-color: var(--nav-buton-color);
