@@ -534,6 +534,7 @@ h3 {
     left:16px;
     bottom:8px;
 }
+
 .form-group span {
     color: #8E8F99;
     font-size:12px;
@@ -560,7 +561,7 @@ h3 {
     background: transparent;
     resize:none;
     width: 360px;
-    height: 138px;
+    height: 120px;
     border-width: 1px;
     border-style:solid;
     border-color:rgba(46, 47, 66, 0.4);
@@ -607,7 +608,9 @@ h3 {
     background-color: rgba(77, 90, 229, 1);
     cursor: pointer;
 }
-
+.form-button:hover{
+    background-color:var(--color-hover);
+}
 .form-end{
     display: flex;
     justify-content: baseline;
